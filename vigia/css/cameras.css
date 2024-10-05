@@ -1,0 +1,73 @@
+.cameras-container {
+  display: grid;
+  padding: 40px 100px;
+}
+
+.cameras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.camera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  align-content: center;
+  align-items: center;
+}
+
+.sirene {
+
+  width: 400px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
+
+.camera p {
+  grid-column: 1/-1;
+}
+
+.img_ocorrencia {
+  grid-column: 1/-1;
+}
+
+
+.add-camera-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.add-camera-form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.add-camera-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.add-camera-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 800px){
+    .cameras-container {
+        padding: 20px 20px;
+      }
+
+      .add-camera-form {
+
+        padding: 10px;
+
+      }
+}
